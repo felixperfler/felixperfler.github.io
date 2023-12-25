@@ -1,0 +1,21 @@
+
+.autograph {
+  width: 150px;
+}
+
+.autograph__path {
+  // opacity: 0;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+  .animated & {
+    opacity: 1;
+    animation-name: line;
+  }
+}
+
+@keyframes line {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
