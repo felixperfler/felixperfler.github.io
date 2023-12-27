@@ -1,3 +1,8 @@
+html {
+    margin:    0 auto;
+    max-width: 768pt;
+}
+
 body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, Ubuntu;
@@ -27,9 +32,21 @@ a:hover {
     text-decoration-color: #007aff;
     color: #007aff;
 }
-
-header a { color: #101010; }
-header a:hover { color: #101010; }
+header {
+  color: #D1D1D1;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #D1D1D1;
+  margin-bottom: 20pt;
+  display: flex;
+  justify-content: space-between;
+}
+header ul{ display: flex; }
+header li + li:not(:last-child) { margin-left: 10px; }
+header li + li:not(:last-child) { margin-right: 10px; }
+header a { color: #D1D1D1; }
+header:hover { border-bottom-color: #101010; }
+header a:hover { color: #101010; border-bottom-color: #101010; }
 header a:link { text-decoration: none; }
 footer {
   border-top-width: 1px;
@@ -39,18 +56,21 @@ footer {
 }
 
 .About { display: flex; }
-.Contact { width: 150pt; text-align: center; flex: 300pt;}
+.Contact { width: 200pt; text-align: center; float: right; }
 .Contact img { width: 100pt; border-radius: 50%; }
 .Contact h1 { font-size: 14pt; margin-bottom: -10pt; }
 .Contact h2 { font-size: 12pt; margin-bottom: -10pt; }
 .Contact ul { padding-left: 0; }
+.Publications {margin: auto; width: 75%; padding: 10px;}
 .Publications h1 { font-size: 14pt; }
 .Publications li:first-child { font-weight: bold; }
+.Education {margin: auto; width: 75%; padding: 10px;}
+.Education h1 { font-size: 14pt; }
+.Education li:first-child { font-weight: bold; }
 
-/*
 @media (prefers-color-scheme: dark) {
   body {
-      background-color: #101010;
+    background-color: #222222;
     color: #ffffff;
   }
   a {
@@ -65,11 +85,16 @@ footer {
     color:#0078b5;
   }
   header a {
-    color: #ffffff;
+    color: #808080;
   }
   header a:hover {
   color: #ffffff;
+  }
+  header:hover { border-bottom-color: #ffffff; }
+  header { border-bottom-color: #808080; }
+  footer {
+    border-top-color: #ffffff;
+  }
 }
-}
- */
+
 
