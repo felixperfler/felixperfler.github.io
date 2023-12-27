@@ -1,5 +1,6 @@
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Ubuntu;
 }
 
 footer {
@@ -15,16 +16,6 @@ ul {
   max-width: 500pt;
 }
 
-.About { display: flex; }
-.Contact { width: 150pt; text-align: center; flex: 50%;}
-.Contact img { width: 100pt; border-radius: 50%; }
-.Contact h1 { font-size: 14pt; margin-bottom: -10pt; }
-.Contact h2 { font-size: 12pt; margin-bottom: -10pt; }
-.Contact ul { padding-left: 0; }
-.Publications h1 { font-size: 14pt; }
-.Publications li:first-child { font-weight: bold; }
-
-/*
 a {
     text-decoration: underline;
     text-decoration-color: #007aff;
@@ -37,18 +28,26 @@ a:hover {
     color: #007aff;
 }
 
-header a {
-  color: #101010;
+header a { color: #101010; }
+header a:hover { color: #101010; }
+header a:link { text-decoration: none; }
+footer {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #101010;
+  text-align: right;
 }
 
-header a:hover {
-  color: #101010;
-}
+.About { display: flex; }
+.Contact { width: 150pt; text-align: center; flex: 50%;}
+.Contact img { width: 100pt; border-radius: 50%; }
+.Contact h1 { font-size: 14pt; margin-bottom: -10pt; }
+.Contact h2 { font-size: 12pt; margin-bottom: -10pt; }
+.Contact ul { padding-left: 0; }
+.Publications h1 { font-size: 14pt; }
+.Publications li:first-child { font-weight: bold; }
 
-header a:link {
-  text-decoration: none;
-}
-
+/*
 @media (prefers-color-scheme: dark) {
   body {
       background-color: #101010;
