@@ -40,6 +40,7 @@ header {
   margin-bottom: 20pt;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 header ul{ display: flex; }
 header li + li:not(:last-child) { margin-left: 10px; }
