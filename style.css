@@ -56,8 +56,8 @@ footer {
   text-align: right;
 }
 
-.About { display: flex; }
-.Contact { width: 200pt; text-align: center; float: right; }
+.About { display: flex; text-align: justify;}
+.Contact { width: 200pt; text-align: center; float: right; padding-left: 40pt; }
 .Contact img { width: 100pt; border-radius: 50%; }
 .Contact h1 { font-size: 14pt; margin-bottom: -10pt; }
 .Contact h2 { font-size: 12pt; margin-bottom: -10pt; }
