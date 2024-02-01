@@ -64,7 +64,7 @@ footer {
 }
 .About { text-align: justify; padding-left: 10pt; padding-right: 10pt; }
 .Contact { text-align: center; padding-left: 30pt; padding-right: 10pt; }
-.Contact img { width: 100pt; border-radius: 50%; }
+.Contact img { width: 200pt; border-radius: 50%; }
 .Contact h1 { font-size: 14pt; margin-bottom: -10pt; }
 .Contact h2 { font-size: 12pt; margin-bottom: -10pt; }
 .Contact ul { padding-left: 0; }
@@ -74,6 +74,9 @@ footer {
 .Education {margin: auto; width: 75%; padding: 10px;}
 .Education h1 { font-size: 14pt; }
 .Education li:first-child { font-weight: bold; }
+.Awards {margin: auto; width: 75%; padding: 10px;}
+.Awards h1 { font-size: 14pt; }
+.Awards li:first-child { font-weight: bold; }
 
 @media (prefers-color-scheme: dark) {
   body {
