@@ -57,12 +57,12 @@ footer {
 
 @media (min-width: 1520px) {
 .About { display: flex;}
-.Contact { float: right; width: 400pt; }
+.Contact { float: right; width: 400pt; padding-left: 30pt; padding-right: 10pt;  }
 }
 
 
 .About { text-align: justify; padding-left: 10pt; padding-right: 10pt; }
-.Contact { text-align: center; padding-left: 30pt; padding-right: 10pt; width: 100%;}
+.Contact { text-align: center; width: 100%;}
 .Contact img { width: 150pt; border-radius: 50%; }
 .Contact h1 { font-size: 14pt; margin-bottom: -10pt; }
 .Contact h2 { font-size: 12pt; margin-bottom: -10pt; }
