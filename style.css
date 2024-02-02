@@ -43,8 +43,7 @@ header {
   align-items: center;
 }
 header ul{ display: flex; }
-header li + li:not(:last-child) { margin-left: 10px; }
-header li + li:not(:last-child) { margin-right: 10px; }
+header li { margin-left: 10px; }
 header a { color: #D1D1D1; }
 header:hover { border-bottom-color: #101010; }
 header a:hover { color: #101010; border-bottom-color: #101010; }
@@ -57,14 +56,14 @@ footer {
 }
 
 @media (min-width: 520px) {
-
 .About { display: flex;}
-.Contact { float: right; width: 200pt; }
-
+.Contact { float: right; width: 400pt; }
 }
+
+
 .About { text-align: justify; padding-left: 10pt; padding-right: 10pt; }
 .Contact { text-align: center; padding-left: 30pt; padding-right: 10pt; }
-.Contact img { width: 200pt; border-radius: 50%; }
+.Contact img { width: 150pt; border-radius: 50%; }
 .Contact h1 { font-size: 14pt; margin-bottom: -10pt; }
 .Contact h2 { font-size: 12pt; margin-bottom: -10pt; }
 .Contact ul { padding-left: 0; }
