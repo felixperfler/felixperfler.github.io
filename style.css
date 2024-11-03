@@ -1,19 +1,20 @@
+/* General Styles */
 html {
-    margin:    0 auto;
+    margin: 0 auto;
     max-width: 768pt;
 }
 
 @font-face {
     font-family: "Berkeley Mono";
     src: url("dfg123-Regular.woff2") format("woff2"),
-       url("dfg123-Regular.woff") format("woff");
+         url("dfg123-Regular.woff") format("woff");
     font-style: normal;
 }
 
 @font-face {
     font-family: "Berkeley Mono";
     src: url("dfg123-Italic.woff2") format("woff2"),
-       url("dfg123-Italic.woff") format("woff");
+         url("dfg123-Italic.woff") format("woff");
     font-style: italic;
 }
 
@@ -23,84 +24,209 @@ html {
 
 body {
     font-family: 'Berkeley Mono';
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+}
+
+.content {
+    flex: 1;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .TopDirectoryPath {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #101010;
+    border-bottom: 1px solid #101010;
 }
 
 .TopButtons li {
     display: inline-block;
-    padding: .15rem .6rem .2rem;
+    padding: 0.15rem 0.6rem 0.2rem;
     cursor: pointer;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     white-space: nowrap;
-    text-decoration: none;
     color: #000;
-    border: .08333rem solid #000;
-    border-radius: 0;
-    outline: none;
     background: #fff;
+    border: 0.08333rem solid #000;
     box-shadow: 2px 2px #bbb;
+    text-decoration: none;
     -webkit-appearance: none;
     appearance: none;
 }
+
 .TopButtons li a {
     text-decoration: none;
     color: #000;
 }
+
 .TopButtons li:hover {
     background: #000;
     color: #fff;
 }
+
 .TopButtons li a:hover {
-    text-decoration: none;
     color: #fff;
 }
 
-html, body {
-    height: 100%;            /* Full height for html and body */
-    margin: 0;              /* Remove default margin */
+.publication {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
 }
 
-body {
-    display: flex;           /* Make body a flex container */
-    flex-direction: column;  /* Stack children vertically */
-}
-
-.content {
-    flex: 1;
-    display: flex;
-}
-
-footer p {
-    margin-left: 20px;
+.publication p {
+    margin: 0.5rem 0;
 }
 
 footer {
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #101010;
+    border-top: 1px solid #101010;
 }
 
+footer p,
 .TopDirectoryPath p {
     margin-left: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-
+.Education, .Awards {
+    margin-bottom: 2rem;
 }
 
+.education-item, .award-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.Education h1, .Awards h1 {
+    color: var(--international-orange);
+    font-size: 12pt;
+}
+
+.education-item p, .award-item p {
+    margin: 0.25rem 0;
+}
+
+a {
+    color: var(--international-orange);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* About Page */
+.About {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.About p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.Contact {
+    margin-top: 2rem;
+}
+
+.Contact img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.Contact h1 {
+    color: var(--international-orange);
+    margin-bottom: 0.5rem;
+}
+
+.Contact h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.Contact p a {
+    color: var(--international-orange);
+    text-decoration: none;
+}
+
+.Contact p a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Styles */
 @media (max-width: 600px) {
     .TopButtons {
         max-width: 410px;
     }
+
     .TopButtons li {
         min-width: 155px;
-        margin-bottom: 10px;;
+        margin-bottom: 10px;
     }
 }
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212;
+        --text-color: #e0e0e0;
+        --border-color: #333;
+        --highlight-background: #1e1e1e;
+        --shadow-color: rgba(0, 0, 0, 0.5);
+    }
+
+    body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+
+    .TopDirectoryPath,
+    .TopButtons li,
+    .publication,
+    .education-item,
+    .award-item,
+    footer,
+    .About {
+        background-color: var(--highlight-background);
+        color: var(--text-color);
+        border-color: var(--border-color);
+    }
+
+    .TopButtons li {
+        background-color: var(--highlight-background);
+        color: var(--text-color);
+        border: 0.08333rem solid var(--border-color);
+        box-shadow: 2px 2px var(--shadow-color);
+    }
+
+    .TopButtons li a {
+        color: var(--text-color);
+    }
+
+    .TopButtons li:hover {
+        background-color: var(--text-color);
+        color: var(--background-color);
+    }
+
+    .TopButtons li a:hover {
+        color: var(--background-color);
+    }
+
+    .publication {
+        background-color: var(--highlight-background);
+        border: 1px solid var(--border-color);
+    }
+
+    .
