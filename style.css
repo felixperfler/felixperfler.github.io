@@ -122,10 +122,9 @@ a:hover {
 
 /* About Page */
 .About {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 2rem;
-    text-align: center;
 }
 
 .About p {
@@ -135,34 +134,28 @@ a:hover {
 }
 
 .Contact {
-    margin-top: 2rem;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
 }
 
-.Contact img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+.Contact table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
 }
 
-.Contact h1 {
-    color: var(--international-orange);
-    margin-bottom: 0.5rem;
+.Contact th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #000;
+    text-align: left;
 }
 
-.Contact h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
-}
-
-.Contact p a {
-    color: var(--international-orange);
-    text-decoration: none;
-}
-
-.Contact p a:hover {
-    text-decoration: underline;
+.Contact td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
 }
 
 /* Mobile Styles */
@@ -199,7 +192,6 @@ a:hover {
     .award-item,
     footer,
     .About {
-        background-color: var(--highlight-background);
         color: var(--text-color);
         border-color: var(--border-color);
     }
@@ -228,5 +220,13 @@ a:hover {
         background-color: var(--highlight-background);
         border: 1px solid var(--border-color);
     }
-
-    .
+    
+    .Contact table {
+        border: 1px solid #ccc;
+    }
+    
+    .Contact th {
+        background-color: var(--highlight-background);
+        border-bottom: 2px solid #ccc;
+    }
+}
