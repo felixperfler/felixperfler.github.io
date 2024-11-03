@@ -216,7 +216,9 @@ a:hover {
         color: var(--background-color);
     }
 
-    .publication {
+    .publication,
+    .education-item,
+    .award-item, {
         background-color: var(--highlight-background);
         border: 1px solid var(--border-color);
     }
