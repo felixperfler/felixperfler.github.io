@@ -185,12 +185,10 @@ a:hover {
         color: var(--text-color);
     }
 
-    .TopDirectoryPath,
     .TopButtons li,
     .publication,
     .education-item,
     .award-item,
-    footer,
     .About {
         color: var(--text-color);
         border-color: var(--border-color);
@@ -218,7 +216,7 @@ a:hover {
 
     .publication,
     .education-item,
-    .award-item, {
+    .award-item {
         background-color: var(--highlight-background);
         border: 1px solid var(--border-color);
     }
