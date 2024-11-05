@@ -177,7 +177,7 @@ a:hover {
         --text-color: #e0e0e0;
         --border-color: #333;
         --highlight-background: #1e1e1e;
-        --shadow-color: rgba(0, 0, 0, 0.5);
+        --shadow-color: #333;
     }
 
     body {
