@@ -1,7 +1,7 @@
 /* General Styles */
 html {
     margin: 0 auto;
-    max-width: 768pt;
+    max-width: 500pt;
 }
 
 :root {
@@ -109,7 +109,7 @@ a:hover {
 
 /* About Page */
 .About {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
     padding: 2rem;
 }
