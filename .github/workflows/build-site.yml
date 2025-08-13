@@ -29,10 +29,19 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          if [ -n "$(git status --porcelain)" ]; then
-            git add publications.html
+          # Add uv.lock to gitignore if it doesn't exist
+          if [ ! -f .gitignore ]; then
+            echo "uv.lock" > .gitignore
+          elif ! grep -q "uv.lock" .gitignore; then
+            echo "uv.lock" >> .gitignore
+          fi
+          
+          # Check for changes (excluding uv.lock)
+          git add publications.html .gitignore 2>/dev/null || true
+          
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
             git commit -m "Auto-update publications.html from markdown [skip ci]"
             git push
-          else
-            echo "No changes to commit"
           fi
