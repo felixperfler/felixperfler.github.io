@@ -28,6 +28,11 @@
 
 .TopButtons li a:hover {
     color: var(--background-color);
+    text-decoration: none;
+}
+
+.TopButtons a[aria-current="page"] {
+    text-decoration: none;
 }
 
 /* Publications */
