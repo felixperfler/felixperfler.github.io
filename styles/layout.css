@@ -30,7 +30,8 @@ footer p {
     }
 
     .TopButtons li {
-        min-width: 155px;
+        width: 155px;
         margin-bottom: 10px;
+        text-align: center;
     }
 }
