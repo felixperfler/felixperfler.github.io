@@ -46,5 +46,12 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;
+
+            // Update the year dynamically (scripts in innerHTML don't execute)
+            const currentYear = new Date().getFullYear();
+            const footerText = document.querySelector('footer p');
+            if (footerText) {
+                footerText.innerHTML = `Copyright © 2023 – ${currentYear} Felix Perfler.`;
+            }
         });
 });
