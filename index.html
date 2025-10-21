@@ -1,33 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Felix Perfler" />
-    <meta
-    name="description"
-    content="Personal Website of Felix Perfler. Currently I am a PhD student at the Acoustics Research Institute of the Austrian Academy of Sciences." />
-    <link rel="stylesheet" href="style.css" />
-    <title>Felix Perfler</title>
+    <meta name="author" content="Felix Perfler">
+    <meta name="description" content="Felix Perfler - PhD student at the Acoustics Research Institute of the Austrian Academy of Sciences, specializing in binaural audio and auditory modeling.">
+    <meta name="keywords" content="Felix Perfler, acoustics, audio engineering, binaural audio, auditory modeling, signal processing, PhD, research">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://felixperfler.com/">
+    <meta property="og:title" content="Felix Perfler - PhD Student in Binaural Audio">
+    <meta property="og:description" content="PhD student at the Acoustics Research Institute of the Austrian Academy of Sciences, specializing in binaural audio and auditory modeling.">
+    <meta property="og:site_name" content="Felix Perfler">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Felix Perfler",
+        "jobTitle": "PhD Student",
+        "affiliation": {
+            "@type": "Organization",
+            "name": "Acoustics Research Institute, Austrian Academy of Sciences"
+        },
+        "url": "https://felixperfler.com",
+        "sameAs": [
+            "https://github.com/felixperfler"
+        ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
+
+    <title>Felix Perfler - Home</title>
 </head>
 
-<body>
-    <header>
-         <div class="TopDirectoryPath"><p>~/felixperfler</p></div>
-        <div class="TopButtons">
-            <ul>
-                <a href="https://felixperfler.com/"><li style="white-space: nowrap;"><span style="color: var(--international-orange);">●</span><span> Home&nbsp;&nbsp;</span></li></a>
-                <a href="publications"><li style="white-space: nowrap;"><span style="color: #00000000;">●</span><span> Publications&nbsp;&nbsp;</span></li></a>
-                <a href="about"><li style="white-space: nowrap;"><span style="color: #00000000;">●</span><span> About&nbsp;&nbsp;</span></li></a>
-            </ul>
-        </div>
-    </header>
+<body data-page="home">
+    <div id="header"></div>
 
     <main class="content">
+        <!-- Main content for home page can go here -->
     </main>
 
-    <footer>
-        <p>Copyright © 2023 – <script>document.write(new Date().getFullYear());</script> Felix Perfler.</p>
-    </footer>
+    <div id="footer"></div>
+
+    <script src="shared/navigation.js"></script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+/* CSS Variables */
+:root {
+    --international-orange: #ff4f00;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #101010;
+    --card-background: #f9f9f9;
+    --card-border: #ccc;
+    --shadow-color: #bbb;
+}
+
+/* Dark Mode Variables */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212;
+        --text-color: #e0e0e0;
+        --border-color: #333;
+        --card-background: #1e1e1e;
+        --card-border: #333;
+        --shadow-color: #333;
+    }
+}
+
+/* Base Styles */
+html {
+    margin: 0 auto;
+    max-width: 500pt;
+}
+
+body {
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace,
+    'DejaVu Sans Mono', Menlo, Consolas, monospace;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Typography */
+a {
+    color: var(--international-orange);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

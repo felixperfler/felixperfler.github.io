@@ -1,98 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Felix Perfler" />
-    <meta
-    name="description"
-    content="Personal Website of Felix Perfler. Currently I am a PhD student at the Acoustics Research Institute of the Austrian Academy of Sciences." />
-    <link rel="stylesheet" href="style.css" />
-    <title>Felix Perfler</title>
+    <meta name="author" content="Felix Perfler">
+    <meta name="description" content="Publications by Felix Perfler - Research in binaural audio, auditory modeling, signal processing, and acoustic engineering.">
+    <meta name="keywords" content="Felix Perfler, publications, research papers, acoustics, audio engineering, binaural audio, signal processing, machine learning">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://felixperfler.com/publications">
+    <meta property="og:title" content="Publications - Felix Perfler">
+    <meta property="og:description" content="Research publications by Felix Perfler on binaural audio, auditory modeling, and signal processing.">
+    <meta property="og:site_name" content="Felix Perfler">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Publications - Felix Perfler",
+        "description": "Research publications by Felix Perfler",
+        "author": {
+            "@type": "Person",
+            "name": "Felix Perfler"
+        }
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/components.css">
+
+    <title>Publications - Felix Perfler</title>
 </head>
 
-<body>
-    <header>
-         <div class="TopDirectoryPath"><p>~/felixperfler/Publications</p></div>
-        <div class="TopButtons">
-            <ul>
-                <a href="https://felixperfler.com/"><li style="white-space: nowrap;"><span style="color: #00000000;">●</span><span> Home&nbsp;&nbsp;</span></li></a>
-                <a href="publications"><li style="white-space: nowrap;"><span style="color: var(--international-orange);">●</span><span> Publications&nbsp;&nbsp;</span></li></a>
-                <a href="about"><li style="white-space: nowrap;"><span style="color: #00000000;">●</span><span> About&nbsp;&nbsp;</span></li></a>
-            </ul>
-        </div>
-    </header>
+<body data-page="publications">
+    <div id="header"></div>
 
     <main class="content">
-        <div class="publication">
-    <p><strong>ISAC: An Invertible and Stable Auditory Filter Bank with Customizable Kernels for ML Integration</strong></p>
-    <p>Daniel Haider, <strong>Felix Perfler</strong>, Peter Balazs, Clara Hollomey, Nicki Holighaus</p>
-    <p>Proceeding of the IEEE International Conference on Sampling Theory and Applications (SampTA), 2025, Vienna</p>
-    <p>
-        <a href="https://arxiv.org/pdf/2505.07709">[Paper]</a>
-        <a href="https://github.com/danedane-haider/HybrA-Filterbanks">[Code]</a>
-    </p>
-</div>
-<div class="publication">
-    <p><strong>Parametric model of the human pinna based on Bézier curves and concave deformations</strong></p>
-    <p><strong>Felix Perfler</strong>, Florian Pausch, Katharina Pollack, Nicki Holighaus, and Piotr Majdak</p>
-    <p>Computers in Biology and Medicine, Volume 188, April 2025, 109817.</p>
-    <p>
-        <a href="https://doi.org/10.1016/j.compbiomed.2025.109817">[Paper]</a>
-        <a href="https://doi.org/10.1016/j.compbiomed.2025.109817">doi:10.1016/j.compbiomed.2025.109817</a>
-    </p>
-</div>
-<div class="publication">
-    <p><strong>Hold Me Tight: Stable Encoder–Decoder Design for Speech Enhancement</strong></p>
-    <p>Daniel Haider, <strong>Felix Perfler</strong>, Vincent Lostanlen, Martin Ehler, Peter Balazs</p>
-    <p>Proceedings of the Interspeech, 2024, Kos.</p>
-    <p>
-        <a href="https://arxiv.org/pdf/2408.17358">[Paper]</a>
-        <a href="https://github.com/felixperfler/Stable-Hybrid-Auditory-Filterbanks">[Code]</a>
-        <a href="https://doi.org/10.21437/Interspeech.2024-1622">doi:10.21437/Interspeech.2024-1622</a>
-    </p>
-</div>
-<div class="publication">
-    <p><strong>Trainable signal encoders that are robust against noise</strong></p>
-    <p>Peter Balazs, Daniel Haider, Vincent Lostanlen, <strong>Felix Perfler</strong></p>
-    <p>Proceedings of the Inter-Noise, 2024, Nantes.</p>
-    <p>
-        <a href="https://hal.science/hal-04697953v1/document">[Paper]</a>
-        <a href="https://hal.science/hal-04697953/">hal-04697953</a>
-    </p>
-</div>
-<div class="publication">
-    <p><strong>Concepts for the evaluation of a parametric pinna model</strong></p>
-    <p><strong>Felix Perfler</strong>, Piotr Majdak, Florian Pausch, Katharina Pollack</p>
-    <p>Proceedings of the Forum Acusticum, 2023, Turin.</p>
-    <p>
-        <a href="https://doi.org/10.61782/fa.2023.1072">doi:10.61782/fa.2023.1072</a>
-    </p>
-</div>
-<div class="publication">
-    <p><strong>Comparison of deep-neural-network architectures for the prediction of head-related transfer functions using a parametric pinna model</strong></p>
-    <p>Florian Pausch, <strong>Felix Perfler</strong>, Nicki Holighaus, Piotr Majdak</p>
-    <p>Proceedings of the Forum Acusticum, 2023, Turin.</p>
-    <p>
-        <a href="https://doi.org/10.61782/fa.2023.0795">doi:10.61782/fa.2023.0795</a>
-    </p>
-</div>
+        <section aria-label="Publications">
+            <article class="publication">
+                <h2 class="publication-title">ISAC: An Invertible and Stable Auditory Filter Bank with Customizable Kernels for ML Integration</h2>
+                <p class="publication-authors">Daniel Haider, <strong>Felix Perfler</strong>, Peter Balazs, Clara Hollomey, Nicki Holighaus</p>
+                <p class="publication-venue">Proceeding of the IEEE International Conference on Sampling Theory and Applications (SampTA), 2025, Vienna</p>
+                <p class="publication-links">
+                    <a href="https://arxiv.org/pdf/2505.07709" rel="noopener noreferrer" target="_blank">[Paper]</a>
+                    <a href="https://github.com/danedane-haider/HybrA-Filterbanks" rel="noopener noreferrer" target="_blank">[Code]</a>
+                </p>
+            </article>
 
-        <div class="Awards" id="Awards">
+            <article class="publication">
+                <h2 class="publication-title">Parametric model of the human pinna based on Bézier curves and concave deformations</h2>
+                <p class="publication-authors"><strong>Felix Perfler</strong>, Florian Pausch, Katharina Pollack, Nicki Holighaus, and Piotr Majdak</p>
+                <p class="publication-venue">Computers in Biology and Medicine, Volume 188, April 2025, 109817.</p>
+                <p class="publication-links">
+                    <a href="https://doi.org/10.1016/j.compbiomed.2025.109817" rel="noopener noreferrer" target="_blank">[Paper]</a>
+                    <a href="https://doi.org/10.1016/j.compbiomed.2025.109817" rel="noopener noreferrer" target="_blank">doi:10.1016/j.compbiomed.2025.109817</a>
+                </p>
+            </article>
+
+            <article class="publication">
+                <h2 class="publication-title">Hold Me Tight: Stable Encoder–Decoder Design for Speech Enhancement</h2>
+                <p class="publication-authors">Daniel Haider, <strong>Felix Perfler</strong>, Vincent Lostanlen, Martin Ehler, Peter Balazs</p>
+                <p class="publication-venue">Proceedings of the Interspeech, 2024, Kos.</p>
+                <p class="publication-links">
+                    <a href="https://arxiv.org/pdf/2408.17358" rel="noopener noreferrer" target="_blank">[Paper]</a>
+                    <a href="https://github.com/felixperfler/Stable-Hybrid-Auditory-Filterbanks" rel="noopener noreferrer" target="_blank">[Code]</a>
+                    <a href="https://doi.org/10.21437/Interspeech.2024-1622" rel="noopener noreferrer" target="_blank">doi:10.21437/Interspeech.2024-1622</a>
+                </p>
+            </article>
+
+            <article class="publication">
+                <h2 class="publication-title">Trainable signal encoders that are robust against noise</h2>
+                <p class="publication-authors">Peter Balazs, Daniel Haider, Vincent Lostanlen, <strong>Felix Perfler</strong></p>
+                <p class="publication-venue">Proceedings of the Inter-Noise, 2024, Nantes.</p>
+                <p class="publication-links">
+                    <a href="https://hal.science/hal-04697953v1/document" rel="noopener noreferrer" target="_blank">[Paper]</a>
+                    <a href="https://hal.science/hal-04697953/" rel="noopener noreferrer" target="_blank">hal-04697953</a>
+                </p>
+            </article>
+
+            <article class="publication">
+                <h2 class="publication-title">Concepts for the evaluation of a parametric pinna model</h2>
+                <p class="publication-authors"><strong>Felix Perfler</strong>, Piotr Majdak, Florian Pausch, Katharina Pollack</p>
+                <p class="publication-venue">Proceedings of the Forum Acusticum, 2023, Turin.</p>
+                <p class="publication-links">
+                    <a href="https://doi.org/10.61782/fa.2023.1072" rel="noopener noreferrer" target="_blank">doi:10.61782/fa.2023.1072</a>
+                </p>
+            </article>
+
+            <article class="publication">
+                <h2 class="publication-title">Comparison of deep-neural-network architectures for the prediction of head-related transfer functions using a parametric pinna model</h2>
+                <p class="publication-authors">Florian Pausch, <strong>Felix Perfler</strong>, Nicki Holighaus, Piotr Majdak</p>
+                <p class="publication-venue">Proceedings of the Forum Acusticum, 2023, Turin.</p>
+                <p class="publication-links">
+                    <a href="https://doi.org/10.61782/fa.2023.0795" rel="noopener noreferrer" target="_blank">doi:10.61782/fa.2023.0795</a>
+                </p>
+            </article>
+        </section>
+
+        <section class="Awards" aria-label="Grants and Awards">
             <h1>Grants and Awards</h1>
-    <div class="award-item">
-        <p><strong>DOC fellowship 2024</strong></p>
-        <p>I received a DOC fellowship (Grant ID A27288) from the Austrian Academy of Sciences for my PhD Thesis "Evaluation and Application of a Parametric Pinna Model" (€98.160).</p>
-    </div>
-    <div class="award-item">
-        <p><strong>WKO Forschungsstipendium 2023</strong></p>
-        <p>I was awarded a stipend by the WKO Steiermark for my master's thesis.</p>
-    </div>
-        </div>
+            <article class="award-item">
+                <h2 class="award-title">DOC fellowship 2024</h2>
+                <p>I received a DOC fellowship (Grant ID A27288) from the Austrian Academy of Sciences for my PhD Thesis "Evaluation and Application of a Parametric Pinna Model" (€98.160).</p>
+            </article>
+            <article class="award-item">
+                <h2 class="award-title">WKO Forschungsstipendium 2023</h2>
+                <p>I was awarded a stipend by the WKO Steiermark for my master's thesis.</p>
+            </article>
+        </section>
     </main>
 
-    <footer>
-        <p>Copyright © 2023 – <script>document.write(new Date().getFullYear());</script> Felix Perfler.</p>
-    </footer>
+    <div id="footer"></div>
+
+    <script src="shared/navigation.js"></script>
 </body>
 </html>

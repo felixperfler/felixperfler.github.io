@@ -1,0 +1,36 @@
+/* Layout */
+.content {
+    flex: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Header */
+.TopDirectoryPath {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.TopDirectoryPath p {
+    margin-left: 20px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--border-color);
+}
+
+footer p {
+    margin-left: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .TopButtons {
+        max-width: 410px;
+    }
+
+    .TopButtons li {
+        min-width: 155px;
+        margin-bottom: 10px;
+    }
+}
