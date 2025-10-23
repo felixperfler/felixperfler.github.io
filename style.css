@@ -27,11 +27,13 @@ body {
 }
 
 .photo-placeholder {
-    margin: 20px 0;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .photo-placeholder img {
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     display: block;
     border-radius: 50%;
