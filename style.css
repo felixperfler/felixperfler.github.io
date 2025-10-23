@@ -68,6 +68,8 @@ section {
 
 article {
     margin-bottom: 2em;
+    border-left: 4px solid #ff4f00;
+    padding-left: 1em;
 }
 
 a {
