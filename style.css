@@ -7,14 +7,39 @@ body {
     line-height: 1.6;
 }
 
-main {
-    max-width: 800px;
+.container {
+    max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    gap: 40px;
+}
+
+.sidebar {
+    flex: 0 0 300px;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+}
+
+.content {
+    flex: 1;
+    min-width: 0;
+}
+
+.photo-placeholder {
+    margin: 20px 0;
+}
+
+.photo-placeholder img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 h1 {
     font-size: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0;
 }
 
 h2 {
@@ -27,6 +52,14 @@ h3 {
     font-size: 1.2em;
     margin-top: 1.5em;
     margin-bottom: 0.5em;
+}
+
+.sidebar h2 {
+    margin-top: 1.5em;
+}
+
+.sidebar h2:first-of-type {
+    margin-top: 1em;
 }
 
 section {
@@ -50,4 +83,15 @@ footer {
     padding-top: 2em;
     border-top: 1px solid #ccc;
     font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: 1;
+        position: static;
+    }
 }
