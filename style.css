@@ -1,135 +1,183 @@
 :root {
-    --bg: #f3f0ea;
-    --text: #1f1f1a;
-    --muted: #4b463c;
-    --accent: #6b5b48;
-    --card: #f3f0ea;
-    --border: #cfc7b9;
+    --bg: #faf8f5;
+    --text: #1a1a1a;
+    --muted: #5c5c5c;
+    --accent: #3d3d3d;
+    --border: #e0dcd5;
+    --highlight: #f0ebe3;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #0f1115;
-        --text: #e7e2da;
-        --muted: #b8b1a6;
-        --accent: #d7c6aa;
-        --card: #161920;
-        --border: #2b3038;
-    }
+* {
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Garamond', 'EB Garamond', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
     background: var(--bg);
     color: var(--text);
     margin: 0;
-    padding: 20px;
-    line-height: 1.7;
-    letter-spacing: 0.01em;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background: radial-gradient(circle at 20% -10%, #1b1f25, #0f1115 60%);
-    }
+    padding: 48px 24px;
+    line-height: 1.6;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
-    gap: 48px;
+    gap: 72px;
 }
 
 .sidebar {
-    flex: 0 0 300px;
+    flex: 0 0 280px;
     position: sticky;
-    top: 20px;
+    top: 48px;
     align-self: flex-start;
-    font-size: 0.9em;
 }
 
 .content {
     flex: 1;
     min-width: 0;
-    font-size: 0.97em;
-    line-height: 1.65;
 }
 
 .photo-placeholder {
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
+    margin: 0 0 32px 0;
 }
 
 .photo-placeholder img {
-    max-width: 65%;
+    width: 100%;
+    max-width: 220px;
     height: auto;
     display: block;
-    border-radius: 50%;
     aspect-ratio: 1;
     object-fit: cover;
-    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+    filter: grayscale(15%);
 }
 
 h1 {
-    font-size: 1.6em;
-    margin-bottom: 0.5em;
-    margin-top: 0;
+    font-size: 1.75em;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin: 0 0 24px 0;
     color: var(--text);
 }
 
 h2 {
-    font-size: 1.35em;
-    margin-top: 2em;
-    margin-bottom: 0.5em;
-    color: var(--text);
+    font-size: 1.1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin: 48px 0 24px 0;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
 }
 
 h3 {
-    font-size: 1.08em;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
+    font-size: 1.05em;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: var(--text);
+    line-height: 1.4;
+}
+
+p {
+    margin: 0 0 12px 0;
+    color: var(--text);
+}
+
+.sidebar p {
+    font-size: 0.95em;
+    line-height: 1.7;
+    color: var(--muted);
+}
+
+.sidebar section {
+    margin-bottom: 0;
+}
+
+.sidebar section:first-of-type {
+    margin-bottom: 32px;
 }
 
 .sidebar h2 {
-    margin-top: 1.5em;
+    margin-top: 32px;
+    font-size: 0.85em;
 }
 
 .sidebar h2:first-of-type {
-    margin-top: 1em;
+    margin-top: 0;
 }
 
 section {
-    margin-bottom: 2em;
+    margin-bottom: 0;
 }
 
 article {
-    margin-bottom: 2em;
-    border-left: 3px solid var(--border);
-    padding-left: 1em;
-    background: var(--card);
-    border-radius: 4px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+article p {
+    font-size: 0.95em;
+    line-height: 1.65;
+}
+
+article p:last-child {
+    margin-bottom: 0;
+}
+
+article em {
+    font-style: italic;
+    color: var(--muted);
 }
 
 a {
     color: var(--accent);
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    transition: opacity 0.15s ease;
 }
 
 a:hover {
-    color: var(--accent);
-    text-decoration: underline;
+    opacity: 0.6;
+}
+
+strong {
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {
+    body {
+        padding: 32px 20px;
+    }
+
     .container {
         flex-direction: column;
+        gap: 48px;
     }
 
     .sidebar {
         flex: 1;
         position: static;
+    }
+
+    .photo-placeholder img {
+        max-width: 160px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        margin-top: 32px;
     }
 }
